@@ -13,18 +13,6 @@ app.set("port", 4000);
 app.use(morgan("dev"));
 
 // Routes
-
-/* app.use("/", (req, res) => {
-    res.json({
-        title: "REST API con Node.js, Express y MySQL",
-        routes: [
-            {
-                users: "/api/users/"
-            }
-        ]
-    })
-}) */
-
 app.use("/api/users", userRoutes);
 
 export default app
